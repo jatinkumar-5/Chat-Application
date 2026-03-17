@@ -40,18 +40,3 @@ exports.register = async(req,res)=>{
 }
 
 
-// exports.resendotp = async(req,res)=>{
-//   try{
-//     const{email} = req.body;
-
-//     const user = await User.findOne({email });
-//     const newOtp = generateotp();
-//     user.otp = newOtp;
-
-//     await user.save();
-//      return res.status(200).json({status:true , message:"Verify The Resend OTP Is Success ",otp:newOtp});
-
-//   } catch (error){ 
-//     return res.status(400).json({status:false, message:error.message});
-//   };
-// }   
