@@ -1,0 +1,56 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vahan Dekho</title>
+      <!-- Fonts: parallel load, does NOT block Vite/Tailwind CSS like @import inside CSS would -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+      <style>
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+        }
+        #root {
+          min-height: 100%;
+        }
+        /* If Tailwind is slow or blocked, you still see readable defaults */
+        body {
+          font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+          color: #3b2400;
+          background: #ffffff;
+        }
+      </style>
+    </head>
+
+    <body>
+      <!-- Always visible until React replaces #root; if you never see the app, JS did not run. -->
+      <div id="root">
+        <div
+          style="
+            padding: 1.25rem 1.5rem;
+            font-family: system-ui, sans-serif;
+            color: #3b2400;
+            background: #fffef9;
+            border-bottom: 3px solid #f97316;
+            line-height: 1.5;
+          "
+        >
+          <strong>Loading…</strong>
+          Run <code style="background: #fff3d6; padding: 0.15rem 0.4rem; border-radius: 4px">npm run dev</code>
+          and open the <strong>localhost</strong> link from the terminal. URLs look like
+          <code style="background: #fff3d6; padding: 0.15rem 0.4rem; border-radius: 4px">http://127.0.0.1:5173/</code>
+          (port terminal jaisa ho sakta hai).
+        </div>
+      </div>
+      <script type="module" src="/src/main.jsx"></script>
+    </body>
+  </html>
+  
